@@ -1,5 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(155, 97, 194);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
 .button-add {
-    background-color: rgb(205, 166, 241);
+    background-color: rgb(155, 97, 194);
     color: white;
     padding: 0.5rem 1rem;
     border: none;
@@ -7,15 +43,56 @@
     cursor: pointer;
 }
 
-.container-card {
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
+.button-add:hover {
+    background-color: rgb(173, 134, 220);
 }
 
-.body{
-    background-color: rgb(206, 56, 56);
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background-color: rgb(245, 245, 245);
+    padding: 10px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    max-width: 100%;
+    flex-wrap: wrap; 
+}
+
+li span {
+    flex-grow: 1;
+    margin-right: 10px; 
+}
+
+button.remove-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-bottom: 5px;
+}
+
+button.remove-btn:hover {
+    background-color: darkred;
+}
+
+@media (max-width: 600px) {
+    .container-card {
+        width: 90%;
+    }
+
+    .input-container {
+        flex-direction: column;
+    }
 }

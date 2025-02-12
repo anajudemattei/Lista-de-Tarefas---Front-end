@@ -1,18 +1,19 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="pt-Br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Tarefas</title>
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container-card">
-    <h1>Lista de Tarefas ✅</h1>
-    <input type="text" name="tarefa" id="tarefa" placeholder="Digite uma tarefa...">
-    <button class="button-add" type="submit">Adicionar</button>
-
+        <h1>Lista de Tarefas ✅</h1>
+        <div class="input-container">
+            <input type="text" name="tarefa" id="tarefa" placeholder="Digite uma tarefa...">
+            <button class="button-add" id="add-button" type="submit">Adicionar</button>
+        </div>
+        <ul id="task-list"></ul>
     </div>
 </body>
 </html>
