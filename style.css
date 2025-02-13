@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Times New Roman', Times, serif;
-    background-color: rgb(155, 97, 194);
+    background-color: rgb(221, 186, 245);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,10 +18,11 @@ body {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.815);
     width: 100%;
     max-width: 500px;
     text-align: center;
+    
 }
 
 h1 {
@@ -35,7 +36,7 @@ h1 {
 }
 
 .button-add {
-    background-color: rgb(155, 97, 194);
+    background-color: rgb(97, 194, 113);
     color: white;
     padding: 0.5rem 1rem;
     border: none;
@@ -44,7 +45,7 @@ h1 {
 }
 
 .button-add:hover {
-    background-color: rgb(173, 134, 220);
+    background-color: rgb(47, 133, 61);
 }
 
 ul {
@@ -59,18 +60,22 @@ li {
     margin: 5px 0;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; 
+    align-items: center; 
     border-radius: 5px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     word-wrap: break-word; 
     overflow-wrap: break-word; 
     max-width: 100%;
-    flex-wrap: wrap; 
+    flex-wrap: nowrap; 
+    position: relative; 
+    padding-right: 50px; 
+    font-size: 16px; 
 }
 
 li span {
     flex-grow: 1;
     margin-right: 10px; 
+    word-break: break-word;
 }
 
 button.remove-btn {
@@ -81,6 +86,8 @@ button.remove-btn {
     border-radius: 5px;
     cursor: pointer;
     border-bottom: 5px;
+    right: 10px;
+    flex-shrink: 0;
 }
 
 button.remove-btn:hover {
